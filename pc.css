@@ -1,0 +1,155 @@
+html{
+    min-width: 30%;
+}
+header{
+    width: 100%;
+    margin-bottom: 10px;
+}
+body{
+    height: 200vh;
+    
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ouj-logo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px;
+}
+.schedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: 80px 0;
+}
+.schedule p{
+    margin: 0 auto;
+}
+.schedule svg{
+    margin: 0 auto;
+    transform: scaleY(-1);
+    position: relative;
+    top: -5px;
+}
+.year{
+    position: relative;
+    top: -5px;
+}
+.timer{
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin: 80px 0;
+    
+}
+.timer p:first-child{
+    position: absolute;
+    top: -70px;
+    left: calc(100%/4);
+    margin-bottom: 20px;
+}
+.timer p{
+    justify-content: center;
+    text-align: center;
+}
+.timer span{
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.cd-text{
+    font-family: "Dosis", sans-serif;
+}
+.fes-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.headline{
+    max-width: 55%;
+    margin: 0;
+    position: relative;
+    left: calc(100%/4.05);
+    border: 1px solid;
+    border-color: transparent transparent #222 transparent;
+}
+.post-title{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: -15%;
+}
+.post-title span{
+    font-size: 30px;
+}
+.fes-info span{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.fs20{
+    font-size: 20px;
+}
+.fs25{
+    font-size: 25px;
+}
+.fs30{
+    font-size: 30px;
+}
+.fs40{
+    font-size: 40px;
+}
+.fs55{
+    font-size: 55px;
+}
+.fs65{
+    font-size: 65px;
+}
+.font-bold{
+    font-weight: bold;
+}
+
+.hamburger{
+    width:40px;
+    height:32px;
+    position: fixed;
+    right: 0.5%;
+    top: 2vh;
+    z-index: 10;
+
+    border-color: transparent;
+    background:transparent;
+    cursor: pointer;
+}
+.hamburger_bar{
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: #333;
+
+    transition: 0.5s;
+}
+.hamburger_bar.scroll{
+    background: #333;
+}
+.hamburger_bar:nth-child(1){
+    top: 0;
+}
+.hamburger_bar:nth-child(2){
+    top:50%;
+    transform: translateY(-50%);
+}
+.hamburger_bar:nth-child(3){
+    top:100%;
+    transform: translateY(-100%);
+}
