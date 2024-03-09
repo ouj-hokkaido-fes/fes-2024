@@ -3,15 +3,20 @@ html{
 }
 header{
     width: 100%;
-    margin-bottom: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+    box-shadow: inset 0 -2px 1px  rgba(0.2,0.2,0.2,0.4);
 }
 body{
-    height: 200vh;
-    
+    background: rgb(131,58,180);
+    background: linear-gradient(342deg, rgba(131,58,180,1) 0%, rgba(29,127,253,1) 65%, rgba(69,223,252,1) 100%);
 }
 .main-container{
     display: flex;
     flex-direction: column;
+    background-color: rgba(0.9,0.9,0.9,0.1);
+    color: white;
+    margin: 0 auto;
     width: 100%;
 }
 .ouj-logo{
@@ -20,38 +25,53 @@ body{
     position: relative;
     padding: 10px;
 }
-.schedule{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    margin: 80px 0;
+.fes-title{
+    font-size: 55px;
 }
-.schedule p{
-    margin: 0 auto;
+.schedule{
+    margin: 40px 0 0 0;
+    width: 100%;
+}
+.schedule-content{
+    position: relative;
+    margin-top: 3%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+}
+.schedule-content p{
+    margin: 0;
+}
+.schedule-title{
+    position: absolute;
+    top: -30px;
+    left: calc(100%/4);;
+}
+.schedule-content span{
+    display: inline-block;
 }
 .schedule svg{
     margin: 0 auto;
     transform: scaleY(-1);
     position: relative;
-    top: -5px;
 }
 .year{
-    position: relative;
-    top: -5px;
 }
 .timer{
     font-weight: bold;
     display: inline-block;
     position: relative;
-    margin: 80px 0;
-    
+    margin: 0;
+    padding: 60px 0 60px 0;
+    transform: skewY(-3deg);
+    background-color: #222;
 }
-.timer p:first-child{
+.timer-content p:first-child{
     position: absolute;
-    top: -70px;
+    top: 10px;
     left: calc(100%/4);
     margin-bottom: 20px;
+    transform: skewY(3deg);
 }
 .timer p{
     justify-content: center;
@@ -68,6 +88,7 @@ body{
 .fes-info{
     display: flex;
     flex-direction: column;
+    margin: 60px 0 80px 0;
     
 }
 .headline{
@@ -75,19 +96,18 @@ body{
     margin: 0;
     position: relative;
     left: calc(100%/4.05);
-    border: 1px solid;
-    border-color: transparent transparent #222 transparent;
+    border: 2px solid;
+    border-color: transparent transparent #fff transparent;
 }
-.post-title{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.post-date{
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    left: -15%;
 }
-.post-title span{
-    font-size: 30px;
+.post-date span{
+    position: relative;
+    left: -10vw;
+    color: white;
 }
 .fes-info span{
     margin: 0 auto;

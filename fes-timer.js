@@ -1,4 +1,4 @@
-let fes_day = new Date(2024,8,14,0).getTime();
+let fes_day = new Date(2024,8,13,0).getTime();
 let time = 0;
 
 let cd_DD = document.querySelector('.cd_DD');
