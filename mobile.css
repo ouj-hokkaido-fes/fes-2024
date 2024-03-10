@@ -26,7 +26,15 @@ body{
     padding: 10px;
 }
 .fes-title{
-    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(55px*0.7);
+}
+.fes-title span:first-child{
+    font-size: calc(30px*0.7);
+}
+.fes-title span:last-child{
+    font-size: calc(70px*0.7);
 }
 .schedule{
     margin: 40px 0 0 0;
