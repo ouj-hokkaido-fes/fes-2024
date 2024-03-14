@@ -12,27 +12,43 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Kosugi+Maru&family=Mochiy+Pop+One&family=Rampart+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Rampart+One&display=swap" rel="stylesheet">
 
     </head>
     <body style="margin: 0;" onload="startTimer();">
-        <header style="display: none;">
-            <div class="ouj-logo">
+        <header>
+            <div class="ouj-logo" style="display: none;">
                 <img src="img/logo_ouj.png" width="166.25" height="35">
             </div>
             <button class="hamburger">
                 <span class="hamburger_bar"></span>
                 <span class="hamburger_bar"></span>
                 <span class="hamburger_bar"></span>
+            </button>
+
+            <nav class="ham-menu-list">
+                <div class="ham-menu-container">
+                    <ul class="fs30 ham-nav-list font-bold">
+                        <li class="ham-menu-item" id="0">
+                            ニュース
+                        </li>
+                        <li class="ham-menu-item" id="1">
+                            お問い合わせ
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <div class="main-container">
             <span class="fes-title">
-            <span class="font-bold">放送大学</span>
-            <span class="font-bold" >北海道学習センター</span>
-            <span class="font-bold">文化祭</span></span>
+            <span class="font-bold rampart-one-regular">放送大学<br></span>
+            <span class="font-bold rampart-one-regular" >北海道学習センター<br></span>
+            <span class="font-bold rampart-one-regular">文化祭</span></span>
+
             <div class="schedule">
                 <div class="schedule-content">
-                    <p class="fs40 font-bold schedule-title">開催期間</p>
+                    <p class="fs40 font-bold schedule-title kosugi-maru">開催期間</p>
                     <p class="fs30 year">2024</p>
                     <p class="fs40 font-bold">9月13日 金</p>
                         <svg width="25"height="25">
@@ -43,15 +59,15 @@
             </div>
             <div class="timer">
                 <div class="timer-content">
-                    <p class="timer-title fs30">文化祭まであと</p>
-                    <p>
+                    <p class="timer-title fs30 mochiy-pop-one-regular">文化祭まであと</p>
+                    <p class="font-bold">
                         <span class="cd_DD fs65 cd-text">--</span>
                         <span class="fs30 timer-sub">日</span>
                         <span class="cd_HH fs65 cd-text">--</span>
                         <span class="fs30 timer-sub">時間</span>
                         <br>
                     </p>
-                    <p>
+                    <p class="font-bold">
                         <span class="cd_MM fs65 cd-text">--</span>
                         <span class="fs30 timer-sub">分</span>
                         <span class="cd_SS fs65 cd-text">--</span>
@@ -59,13 +75,18 @@
                     </p>
                 </div>
             </div>
-            <div class="fes-info">
-                <p class="fs30 headline font-bold">News</p>
+            <div class="fes-info scr-1" id="p0">
+                <p class="fs30 headline mochiy-pop-one-regular">News</p>
                 <p class="fs20 post-date"><span>2024.3.9</span></p>
                 <span class="fs20"><span>下記日程での</span><span>開催を予定しています。</span><br>
                 <span class="fs20" style="background: linear-gradient(transparent 90%, yellow 60%);"><span>2024年9月13日（金）</span><span>～</span> <span>9月15日（日）</span>
             </div>
+            <div class="contact scr-2" id="p1">
+                <p class="fs30 contact-headline kosugi-maru">お問い合わせ</p>
+                <span class="fs20">bruh bruh bruh</span>
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="fes-timer.js"></script>
+    <script type="text/javascript" src="hamburger.js"></script>
 </html>

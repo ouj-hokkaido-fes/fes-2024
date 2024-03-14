@@ -14,6 +14,7 @@ function showTimer(){
         return("fes Start");
     }
     else{
+        //現在時刻と開催日との差分を取ってカウントダウンタイマー用に変換
         time = parseInt(Number(new Date().getTime() - fes_day)/1000)*-1;
         console.log(time);
 
@@ -23,13 +24,9 @@ function showTimer(){
         time_SS = parseInt((((time-86400*time_DD)-3600*time_HH)-60*time_MM));
 
         cd_DD.textContent = parseInt(time_DD).toString().padStart(2,"0");
-        console.log(time_DD);
         cd_HH.textContent = parseInt(time_HH).toString().padStart(2,"0");
-        console.log(time_HH);
         cd_MM.textContent = parseInt(time_MM).toString().padStart(2,"0");
-        console.log(time_MM);
         cd_SS.textContent = parseInt(time_SS).toString().padStart(2,"0");
-        console.log(time_SS);
     }
 }
 

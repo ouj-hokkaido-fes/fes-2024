@@ -1,12 +1,6 @@
 html{
     min-width: 30%;
 }
-header{
-    width: 100%;
-    background-color: white;
-    padding-bottom: 10px;
-    box-shadow: inset 0 -2px 1px  rgba(0.2,0.2,0.2,0.4);
-}
 body{
     background: rgb(131,58,180);
     background: linear-gradient(342deg, rgba(131,58,180,1) 0%, rgba(29,127,253,1) 65%, rgba(69,223,252,1) 100%);
@@ -30,14 +24,19 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    line-height: 1.1;
     font-size: 55px;
     margin:0;
     max-width: 100%;
 }
 .fes-title span:first-child{
+    position: relative;
+    right: 9%;
     font-size: 40px;
 }
 .fes-title span:last-child{
+    position: relative;
+    left: 8%;
     font-size: 60px;
 }
 .schedule{
@@ -70,7 +69,6 @@ body{
 .year{
 }
 .timer{
-    font-weight: bold;
     display: inline-block;
     position: relative;
     margin: 0;
@@ -125,6 +123,24 @@ body{
     margin: 0 auto;
     padding: 0;
 }
+.contact{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+.contact-headline{
+    max-width: 55%;
+    top:-20px;
+    position: relative;;
+    left: calc(100%/4.05);
+}
+.contact span{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
 
 
 .fs20{
@@ -148,40 +164,103 @@ body{
 .font-bold{
     font-weight: bold;
 }
+.rampart-one-regular {
+    font-family: "Rampart One", sans-serif;
+}
+.kosugi-maru{
+    font-family: "Kosugi Maru", sans-serif;
+}
+.mochiy-pop-one-regular {
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
 
 .hamburger{
-    width:40px;
-    height:32px;
+    width:50px;
+    height:45px;
     position: fixed;
     right: 0.5%;
-    top: 2vh;
+    top: 1vh;
     z-index: 10;
+    border-radius: 20%;
 
     border-color: transparent;
-    background:transparent;
+    background-color: #fff;
     cursor: pointer;
 }
 .hamburger_bar{
     display: block;
-    width: 100%;
+    width: 60%;
     height: 4px;
     position: absolute;
-    left: 0;
+    left: 20%;
     background: #333;
-
     transition: 0.5s;
 }
 .hamburger_bar.scroll{
     background: #333;
 }
 .hamburger_bar:nth-child(1){
-    top: 0;
+    top: 20%;
 }
 .hamburger_bar:nth-child(2){
     top:50%;
     transform: translateY(-50%);
 }
 .hamburger_bar:nth-child(3){
-    top:100%;
+    top:80%;
     transform: translateY(-100%);
+}
+.hamburger.active{
+    background: transparent;
+}
+.hamburger.active :nth-child(1){
+    top:40%;
+    transform: rotate(45deg);
+}
+.hamburger.active :nth-child(2){
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+.hamburger.active :nth-child(3){
+    top: 40%;
+    transform: translateY(-100%);
+    transform: rotate(-45deg);
+}
+
+
+
+.ham-menu-list{
+    display: none;
+    transition: 0.5s;
+}
+.ham-menu-list.active{
+    z-index: 2;
+    background-color: rgba(220, 220, 220, 0.7);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding-right: 5%;
+    right: 0px;
+    height: 100%;
+    box-shadow: inset 1px 0px 2px #383838;
+}
+.ham-menu-container{
+    position: relative;
+    top:6%;
+}
+.ham-nav-list{
+}
+.ham-menu-item{
+    list-style:none;
+    color: #333;
+    margin-bottom: 5px;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.ham-menu-item:hover{
+    z-index: 3;
+    transition: 0.25s;
+    background-color: rgba(206, 206, 206, 0.75);
 }
