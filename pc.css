@@ -101,7 +101,7 @@ body{
 .fes-info{
     display: flex;
     flex-direction: column;
-    margin: 60px 0 80px 0;
+    margin: 60px 0 30px 0;
     
 }
 .headline{
@@ -112,20 +112,39 @@ body{
     border: 2px solid;
     border-color: transparent transparent #fff transparent;
 }
-.post-date{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-.post-date span{
+.news-content{
+    display: flex;
+    flex-direction: column;
     position: relative;
-    left: -10vw;
+    margin-bottom: 4%;
+    max-width: 100%;
+    margin: 0 30%;
+}
+.news-content .post-date{
     color: white;
+    position: relative;
+    left: calc(100%/20*-1);
+    max-width: 50%;
 }
-.fes-info span{
-    margin: 0 auto;
-    padding: 0;
+.news-content span{
+    position: relative;
+    text-align: center;
+    margin: 0;
 }
+.news-content p:not(.post-date){
+    position: relative;
+    margin: 0;
+    left: calc(100%/5);
+}
+.news-content :last-child{
+    margin-bottom: 0;
+}
+.border span{
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid yellow;
+}
+
 .contact{
     width: 100%;
     padding: 30px 0;
@@ -139,11 +158,23 @@ body{
     position: relative;;
     left: calc(100%/4.05);
 }
-.contact span{
+.contact-container{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    margin: 0 auto;
 }
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    border: solid yellow;
+    border-width: 0 0 0 2px;
+    padding: 10px 20px 10px 5px;
+    margin: 0 2%;
+}
+.contact-block span{
+    display: inline-block; 
+}
+
 
 
 .fs20{
