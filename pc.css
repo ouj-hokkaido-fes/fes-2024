@@ -137,7 +137,7 @@ body{
     left: calc(100%/5);
 }
 .news-content :last-child{
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 .border span{
     position: relative;
@@ -169,7 +169,7 @@ body{
     border: solid yellow;
     border-width: 0 0 0 2px;
     padding: 10px 20px 10px 5px;
-    margin: 0 2%;
+    margin: 0 5%;
 }
 .contact-block span{
     display: inline-block; 

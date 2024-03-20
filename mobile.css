@@ -146,10 +146,21 @@ body{
     position: relative;;
     left: calc(100%/4.05);
 }
-.contact span{
+.contact-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    margin: 0 auto;
+}
+.contact-block{
+    display: flex;
+    flex-direction: column;
+    border: solid yellow;
+    border-width: 0 0 0 2px;
+    padding: 10px 20px 10px 5px;
+    margin: 0 15% 5% 15%;
+}
+.contact span{
+    display: inline-block; 
 }
 
 .fs20{
