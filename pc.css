@@ -98,10 +98,10 @@ body{
 .cd-text{
     font-family: "Dosis", sans-serif;
 }
-.fes-info{
+.fes-news{
     display: flex;
     flex-direction: column;
-    margin: 60px 0 30px 0;
+    margin: 60px 0 60px 0;
     
 }
 .headline{
@@ -137,7 +137,7 @@ body{
     left: calc(100%/5);
 }
 .news-content :last-child{
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 .border span{
     position: relative;
