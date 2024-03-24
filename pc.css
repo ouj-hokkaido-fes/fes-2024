@@ -292,15 +292,33 @@ body{
 }
 .ham-nav-list{
 }
+.ham-menu-headline{
+    list-style:none;
+    color: #333;
+    width: 60%;
+    padding-left: 5px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-left: 3px solid #333;
+    text-wrap: none;
+}
 .ham-menu-item{
     list-style:none;
     color: #333;
-    margin-bottom: 5px;
+    margin: 10px 0;
     padding: 5px 20px;
     border-radius: 20px;
+    transition: 0.4s;
+    cursor:pointer;
 }
 .ham-menu-item:hover{
     z-index: 3;
-    transition: 0.25s;
-    background-color: rgba(206, 206, 206, 0.75);
+    background-color: white;
+}
+.ham-menu-item img{
+    position: relative;
+    top: 5px;
+    width: 25px;
+    height: 25px;
 }
