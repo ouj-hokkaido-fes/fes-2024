@@ -30,6 +30,10 @@ background: radial-gradient(circle, rgba(63,78,129,1) 0%, rgba(49,40,82,1) 100%)
     display: flex;
     flex-direction: row;
 }
+.desc-timetable span{
+    display: inline-block;
+    list-style-type: disc;
+}
 .desc-timetable ul:last-child{
     list-style: none;
 }
@@ -51,6 +55,13 @@ background: radial-gradient(circle, rgba(63,78,129,1) 0%, rgba(49,40,82,1) 100%)
     position: relative;
     margin-left: calc(60vw/8);
     font-size: calc(20*0.7px);
+}
+.desc-container a{
+    color:rgb(53, 224, 90);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    
 }
 .main-container{
     margin: 5% 10vw;
