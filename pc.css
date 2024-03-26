@@ -123,26 +123,41 @@ body{
 .news-content .post-date{
     color: white;
     position: relative;
+    top:10px;
     left: calc(100%/20*-1);
+    margin-top: 30px;
+    margin-bottom: 10px;
     max-width: 50%;
-}
-.news-content span{
-    position: relative;
-    text-align: center;
-    margin: 0;
 }
 .news-content p:not(.post-date){
     position: relative;
     margin: 0;
     left: calc(100%/5);
 }
-.news-content :last-child{
-    margin-bottom: 0px;
+.post-title{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    outline-offset: 20px;
+    padding-left: 1px;
+    padding-bottom: 10px;
+    margin: 20px 0; 
+    position: relative;
+    left: calc(100%/8);
+}
+.news-content a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    margin: 0;
+    left: calc(100%/3);
+    margin-top: 10px;
 }
 .border span{
     position: relative;
-    text-align: center;
     border-bottom: 3px solid yellow;
+}
+.border a{
+    position: relative;
+    border-bottom: 3px solid rgb(126, 38, 228);
 }
 
 .contact{
@@ -295,7 +310,7 @@ body{
 .ham-menu-headline{
     list-style:none;
     color: #333;
-    width: 60%;
+    width: 70%;
     padding-left: 5px;
     padding-bottom: 0;
     margin-bottom: 5px;

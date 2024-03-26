@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho&text=0123456789');
+
 
 html{
     margin: 0;
@@ -6,16 +8,55 @@ header{
     margin: 0;
 }
 body{
-    background-color: rgb(214, 214, 214);
+    background: rgb(63,78,129);
+background: radial-gradient(circle, rgba(63,78,129,1) 0%, rgba(49,40,82,1) 100%);
     margin: 0;
 }
 .pagetitle{
     position: relative;
     text-align: center;
-    color: #333
+    color: white;
 }
 .pagetitle p,h1{
     margin: 0;
+}
+.desc-container{
+    color: white;
+    display: inline-block;
+    margin: 50px 20%;
+    max-width: 80%;
+
+}
+.desc-container .desc-timetable{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+}
+.desc-timetable ul:last-child{
+    list-style: none;
+}
+.desc-timetable ul{
+    display: block;
+}
+.desc-container h1{
+    position: relative;
+    font-weight: normal;
+    margin-left: calc(60vw/10);
+    margin: 20px 0;
+}
+.desc-container h2{
+    position: relative;
+    margin-left: calc(60vw/8);
+    border-bottom: 2px solid rgba(255,255,255,0.06);
+}
+.desc-container h3{
+    position: relative;
+    margin-left: calc(60vw/6);
+}
+.desc-container ul,.desc-container p{
+    position: relative;
+    margin-left: calc(60vw/6);
+    font-size: 20px;
 }
 .main-container{
     margin: 5% 10vw;
@@ -28,9 +69,9 @@ body{
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    width: calc(80vw/4.8);
+    width: calc(77vw/4.9);
     border-radius: 5px;
-    margin: 1% 1.5%;
+    margin: 1% 1.5vw;
     padding: 5px;
 
 }
