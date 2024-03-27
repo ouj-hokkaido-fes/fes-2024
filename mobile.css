@@ -87,10 +87,38 @@ body{
 .cd-text{
     font-family: "Dosis", sans-serif;
 }
+.concept{
+    margin-top: 60px;
+}
+.concept-content{
+    margin: 0 5%;
+}
+.concept-theme{
+    position: relative;
+    left: calc(5%);
+    margin: 40px 5% 0 5%;
+    text-wrap: nowrap;
+}
+.concept-theme span{
+    display: inline-block;
+    position: relative;
+    left: calc(100%/20*-1);
+}
+.concept-theme span:last-child{
+    position: relative;
+    left: calc(100%/5);
+}
+
+.concept-theme span{
+    display: inline-block;
+}
+.concept-text span{
+    display: inline-block;
+}
 .fes-news{
     display: flex;
     flex-direction: column;
-    margin: 40px 0 40px 0;
+    margin: 30px 0 40px 0;
 }
 .headline{
     max-width: 55%;
@@ -141,6 +169,7 @@ body{
     left: calc(100%/5);
     margin-top: 10px;
 }
+
 .border span{
     position: relative;
     border-bottom: 3px solid yellow;
@@ -176,6 +205,9 @@ body{
     display: inline-block; 
 }
 
+.fs15{
+    font-size: calc(15*0.7px);
+}
 .fs20{
     font-size: calc(20*0.7px);
 }
@@ -209,6 +241,13 @@ body{
 .murecho{
     font-family: "Murecho", sans-serif;
 }
+.mplus1{
+    font-family: "M PLUS 1", sans-serif;
+}
+.zen-kaku-gothic-antique{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
 
 .hamburger{
     width:50px;
