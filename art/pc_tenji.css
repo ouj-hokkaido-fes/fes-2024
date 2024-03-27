@@ -25,7 +25,9 @@ background: radial-gradient(circle, rgba(63,78,129,1) 0%, rgba(49,40,82,1) 100%)
     display: inline-block;
     margin: 50px 20%;
     max-width: 80%;
-
+}
+p,ul{
+    font-weight: 300;
 }
 .desc-container .desc-timetable{
     display: flex;
@@ -135,6 +137,12 @@ background: radial-gradient(circle, rgba(63,78,129,1) 0%, rgba(49,40,82,1) 100%)
 }
 .murecho{
     font-family: "Murecho", sans-serif;
+}
+.mplus1{
+    font-family: "M PLUS 1", sans-serif;
+}
+.zen-kaku-gothic-antique{
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 .hamburger{
