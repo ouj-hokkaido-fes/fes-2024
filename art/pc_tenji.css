@@ -35,7 +35,8 @@ p,ul{
     margin:0;
 }
 .desc-timetable ul{
-    margin-left: calc(60vw/16)
+    margin-left: calc(60vw/16);
+    list-style: none;
 }
 .desc-timetable ul:last-child{
     list-style: none;
