@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Murecho&text=0123456789');
 
+::selection{
+    background-color: #e49b2e;
+}
 html{
     min-width: 30%;
 }
@@ -345,4 +348,3 @@ body{
     width: 25px;
     height: 25px;
 }
-
