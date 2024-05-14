@@ -196,6 +196,12 @@ body{
     position: relative;
     border-bottom: 3px solid rgb(126, 38, 228);
 }
+#movie-url{
+    text-decoration: underline;
+    color: #ffb968;
+    position: relative;
+    left: calc(100%/7);
+}
 
 .contact{
     width: 100%;

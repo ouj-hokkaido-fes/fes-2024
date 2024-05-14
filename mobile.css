@@ -207,6 +207,10 @@ body{
 .contact span{
     display: inline-block; 
 }
+#movie-url{
+    text-decoration: underline;
+    color: #ffb968;
+}
 
 .fs15{
     font-size: calc(15*0.7px);
