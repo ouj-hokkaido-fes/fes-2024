@@ -190,6 +190,10 @@ body{
 }
 .border span{
     position: relative;
+    border-bottom: 3px solid #f7b95c;
+}
+#link span{
+    position: relative;
     border-bottom: 3px solid yellow;
 }
 .border a{
