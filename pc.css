@@ -132,17 +132,16 @@ body{
 .concept-text span{
     display: inline-block;
 }
+
 .fes-news{
     display: flex;
     flex-direction: column;
-    margin: 40px 0 60px 0;
-    
+    margin: 20px 0 60px 0;
 }
 .headline{
     max-width: 55%;
-    margin: 0;
+    margin: 0 20%;
     position: relative;
-    left: calc(100%/4.05);
     border: 2px solid;
     border-color: transparent transparent #fff transparent;
 }
@@ -150,23 +149,24 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 4%;
     max-width: 100%;
     margin: 0 30%;
 }
 .news-content .post-date{
     color: white;
     position: relative;
-    top:10px;
-    left: calc(100%/20*-1);
-    margin-top: 30px;
-    margin-bottom: 10px;
+    top:30px;
     max-width: 50%;
 }
 .news-content p:not(.post-date){
     position: relative;
     margin: 0;
-    left: calc(100%/5);
+}
+.news-content a{
+    text-align: center;
+}
+.post-update{
+    font-weight: bold;
 }
 .post-title{
     border-bottom: 2px solid rgba(255, 255, 255, 0.18);
@@ -175,14 +175,12 @@ body{
     padding-bottom: 10px;
     margin: 20px 0; 
     position: relative;
-    left: calc(100%/8);
 }
 .news-content a{
     text-decoration: none;
     color: white;
     position: relative;
     margin: 0;
-    left: calc(100%/3);
     margin-top: 10px;
 }
 .post-more-desc span{
@@ -191,6 +189,21 @@ body{
 .border span{
     position: relative;
     border-bottom: 3px solid #f7b95c;
+}
+.border-headline{
+    border-left: 3px solid #f7b95c;
+    padding-left: 5px;
+}
+.border-content span{
+    border-bottom: 1.5px solid #9af75c;
+}
+.content-expander,.content-collapser{
+    cursor: pointer;
+}
+
+.movie-time{
+    padding: 1px 20px;
+    font-weight: 300;
 }
 #link span{
     position: relative;
@@ -236,9 +249,9 @@ body{
 .contact-block span{
     display: inline-block; 
 }
-
-
-
+.break-span span{
+    display: inline-block;
+}
 .fs15{
     font-size: 15px;
 }

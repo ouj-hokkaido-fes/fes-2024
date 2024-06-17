@@ -14,9 +14,8 @@ function showTimer(){
         return("fes Start");
     }
     else{
-        //現在時刻と開催日との差分を取ってカウントダウンタイマー用に変換
+        //現在時刻と開催日との差�?を取ってカウントダウンタイマ�?�用に変換
         time = parseInt(Number(new Date().getTime() - fes_day)/1000)*-1;
-        console.log(time);
 
         time_DD = parseInt(time/86400);
         time_HH = parseInt((time-86400*time_DD)/3600);
@@ -31,4 +30,3 @@ function showTimer(){
 }
 
 time = parseInt(Number(new Date().getTime() - fes_day)/1000)*-1;
-console.log(time);

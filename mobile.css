@@ -177,6 +177,14 @@ body{
     position: relative;
     border-bottom: 3px solid #f7b95c;
 }
+.border-headline{
+    border-left: 3px solid #f7b95c;
+    padding-left: 5px;
+}
+.border-content span{
+    border-bottom: 1.5px solid #9af75c;
+}
+
 #link span{
     position: relative;
     border-bottom: 3px solid yellow;
@@ -259,7 +267,9 @@ body{
     font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
-
+.break-span span{
+    display: inline-block;
+}
 .hamburger{
     width:50px;
     height:45px;
