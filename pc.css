@@ -200,6 +200,9 @@ body{
 .content-expander,.content-collapser{
     cursor: pointer;
 }
+.content-expander span,.content-collapser span{
+    font-weight: 100;
+}
 
 .movie-time{
     padding: 1px 20px;
@@ -230,7 +233,7 @@ body{
 .contact-headline{
     max-width: 55%;
     top:-20px;
-    position: relative;;
+    position: relative;
     left: calc(100%/4.05);
 }
 .contact-container{
