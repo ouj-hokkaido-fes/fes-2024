@@ -10,6 +10,10 @@ body{
     background: rgb(131,58,180);
     background: linear-gradient(342deg, rgba(131,58,180,1) 0%, rgba(29,127,253,1) 65%, rgba(69,223,252,1) 100%);
 }
+li{
+    list-style: square;
+}
+
 .main-container{
     display: flex;
     flex-direction: column;
@@ -221,6 +225,9 @@ body{
     color: #ffb968;
     position: relative;
     left: calc(100%/7);
+}
+.wg300{
+    font-weight: 300;
 }
 
 .contact{
